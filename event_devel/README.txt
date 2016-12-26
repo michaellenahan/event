@@ -27,4 +27,6 @@ routes:
 
 For each of the routes a menu link is provided in the _Tools_ menu, so that it
 can be easily accessed from the first sidebar using a _Standard_ installation of
-Drupal.
+Drupal. (The _Tools_ menu is used as default location for routes, if the
+menu_name key is omitted, see:
+https://www.drupal.org/docs/8/api/menu-api/providing-module-defined-menu-links)
