@@ -1,11 +1,14 @@
 event_devel.evaluate_test_code:
   title: 'Evaluate test code'
   route_name: event_devel.evaluate_test_code
+  # If menu_name is omitted, the "Tools" menu will be used.
 
 event_devel.update_entity_field_definitions:
   title: 'Update entity/field definitions'
   route_name: event_devel.update_entity_field_definitions
+  # If menu_name is omitted, the "Tools" menu will be used.
 
 event_devel.basic_auth_info:
   title: 'HTTP Basic authentication information'
   route_name: event_devel.basic_auth_info
+  # If menu_name is omitted, the "Tools" menu will be used.
