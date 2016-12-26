@@ -2,8 +2,8 @@
 
 The process of creating the _Event_ entity type is documented below in the steps
 that it takes to get from one branch to the next with notes for each step. Note
-that the actual code in the branches is more not identical to the code snippets
-given here, although it is functionally equivalent.
+that the actual code in the branches is not identical to the code snippets given
+here, although it is functionally equivalent.
 
 ## Minimal entity type
 Branch: `00-empty-module` → `01-minimal-entity-type`
@@ -15,7 +15,7 @@ Branch: `00-empty-module` → `01-minimal-entity-type`
 * Create `src/Entity` directory
   * Subdirectories in `src` for organization
   * Some directories have special meaning
-  * Drupal looks in `Entity` for entity types.
+  * Drupal looks in `Entity` for entity types
 
 * Create `src/Entity/Event.php` file and add the following:
   ```php
@@ -74,7 +74,6 @@ Branch: `00-empty-module` → `01-minimal-entity-type`
   * Load an event by ID and print ID and UUID
   * Delete an event
       * Row in `{event}` table gone
-
 
 ## Base field definitions
 Branch: `01-minimal-entity-type` → `02-base-field-definitions`
@@ -136,7 +135,6 @@ Branch: `01-minimal-entity-type` → `02-base-field-definitions`
 * Apply entity updates
   * `title`, `date`, `description__value`, `description__format` columns
   * Load an event set title, date, and description and save
-
 
 ## Interface
 Branch: `02-base-field-definitions` → `03-interface`
@@ -204,7 +202,6 @@ Branch: `02-base-field-definitions` → `03-interface`
 
 * Test the new API
   * Load an event set title, date, and description using the methods and save
-
 
 ## View builder
 Branch: `03-interface` → `04-view-builder`
@@ -305,7 +302,6 @@ Branch: `03-interface` → `04-view-builder`
 
 * Visit `/event/{event}`
 * Visit _Recent log messages_ page
-
 
 ## Forms
 Branch: `04-view-builder` → `05-forms`
