@@ -52,7 +52,7 @@ class TestController implements ContainerInjectionInterface {
   /**
    * Provides an empty test controller to easily execute arbitrary code.
    *
-   * This is exposed at the '/test' path on your site.
+   * This is exposed at the '/evaluate-test-code' path on your site.
    *
    * If Drush is available you can also run arbitrary code in the context of a
    * bootstrapped Drupal site with the "drush php-eval", "drush php-script" or
