@@ -80,7 +80,7 @@ class TestController implements ContainerInjectionInterface {
     //   ]
     // ]);
     // $event->save();
-    // drupal_set_message('A new event with the ID ' . $event->id() . ' has been saved.');
+    // drupal_set_message('A new event with ID ' . $event->id() . ' has been saved.');
 
     // This loads an event by its ID.
     $id = 1;
@@ -88,24 +88,24 @@ class TestController implements ContainerInjectionInterface {
 
     // This tests the various methods of the interface.
     // $title = $event->getTitle();
-    // drupal_set_message('The title of the event with the ID ' . $id . ' is ' . $title . '.');
+    // drupal_set_message('The title of the event with ID ' . $id . ' is ' . $title . '.');
     // $title = $event->setTitle('Drupal Developer Days Milano')->getTitle();
-    // drupal_set_message('The title of the event with the ID ' . $id . ' is now ' . $title . '.');
+    // drupal_set_message('The title of the event with ID ' . $id . ' is now ' . $title . '.');
 
     // $date = $event->getDate()->format(DATETIME_DATE_STORAGE_FORMAT);
-    // drupal_set_message('The date of the event with the ID ' . $id . ' is ' . $date . '.');
+    // drupal_set_message('The date of the event with ID ' . $id . ' is ' . $date . '.');
     // $date = $event->setDate(new \DateTime('tomorrow'))->getDate()->format(DATETIME_DATE_STORAGE_FORMAT);
-    // drupal_set_message('The date of the event with the ID ' . $id . ' is now ' . $date . '.');
+    // drupal_set_message('The date of the event with ID ' . $id . ' is now ' . $date . '.');
 
     // $description = $event->getDescription();
-    // drupal_set_message('The description of the event with the ID ' . $id . ' is:');
+    // drupal_set_message('The description of the event with ID ' . $id . ' is:');
     // drupal_set_message($description);
     // $malicious_html = '<iframe width="560" height="315" src="https://www.youtube.com/embed/Ch_hoYPPeGc" frameborder="0" allowfullscreen></iframe>';
     // $description = $event->setDescription($malicious_html, 'full_html')->getDescription();
-    // drupal_set_message('The description of the event with the ID ' . $id . ' is now:');
+    // drupal_set_message('The description of the event with ID ' . $id . ' is now:');
     // drupal_set_message($description);
     // $description = $event->setDescription($malicious_html, 'plain_text')->getDescription();
-    // drupal_set_message('The description of the event with the ID ' . $id . ' is now:', 'status', TRUE);
+    // drupal_set_message('The description of the event with ID ' . $id . ' is now:', 'status', TRUE);
     // drupal_set_message($description, 'status', TRUE);
 
     return ['#markup' => 'Any code placed in \\' . __METHOD__ . '() is executed on this page.'];
