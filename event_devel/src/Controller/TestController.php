@@ -73,17 +73,17 @@ class TestController implements ContainerInjectionInterface {
     // This creates a new event and saves it to the database:
     // $event = Event::create();
     // $event->save();
-    // drupal_set_message('A new event with the ID ' . $event->id() . ' has been saved.');
+    // drupal_set_message('A new event with ID ' . $event->id() . ' has been saved.');
 
     // This loads an event by its ID and displays its UUID in a message.
-    // $id = 1;
-    // $uuid = Event::load($id)->uuid();
-    // drupal_set_message('The UUID for event with the ID ' . $id . ' is ' . $uuid . '.');
+    $id = 1;
+    $uuid = Event::load($id)->uuid();
+    drupal_set_message('The UUID for the event with ID ' . $id . ' is ' . $uuid . '.');
 
     // This deletes an event by its ID.
     // $id = 1;
     // Event::load($id)->delete();
-    // drupal_set_message('The event with the ID ' . $id . ' was successfully deleted.');
+    // drupal_set_message('The event with ID ' . $id . ' was successfully deleted.');
 
     return ['#markup' => 'Any code placed in \\' . __METHOD__ . '() is executed on this page.'];
   }
