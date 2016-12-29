@@ -5,7 +5,7 @@ namespace Drupal\event_devel\Controller;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityDefinitionUpdateManagerInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-// Leave an unused use statements, so commented out code below works immediately
+// Leave an unused use statement, so commented out code below works immediately
 // when uncommenting it.
 // @codingStandardsIgnoreStart
 use Drupal\event\Entity\Event;
@@ -71,27 +71,27 @@ class TestController implements ContainerInjectionInterface {
   public function evaluateTestCode() {
 
     // This creates a new event and saves it to the database:
-    // $event = Event::create([
-    //   'title' => 'DrupalCon New Orleans',
-    //   'date' => REQUEST_TIME,
-    //   'description' => [
-    //     'value' => '<p>The North American DrupalCon in 2016 is happening in New Orleans and it is <strong>awesome</strong>!</p>',
-    //     'format' => 'basic_html',
-    //   ]
-    // ]);
-    // $event->save();
-    // drupal_set_message('A new event with the ID ' . $event->id() . ' has been saved.');
+     $event = Event::create([
+       'title' => 'DrupalCon New Orleans',
+       'date' => REQUEST_TIME,
+       'description' => [
+         'value' => '<p>The North American DrupalCon in 2016 is happening in New Orleans and it is <strong>awesome</strong>!</p>',
+         'format' => 'basic_html',
+       ]
+     ]);
+     $event->save();
+     drupal_set_message('A new event with ID ' . $event->id() . ' has been saved.');
 
     // This loads an event by its ID.
     // $id = 1;
     // $event = Event::load($id);
 
     // Just there are generic id() and uuid() methods for all entities, there is
-    // a generic method for displaying an entities label. For this entity type
-    // we have decided that the 'title' field represents what is generically c
-    // considered the label.
+    // a generic method for displaying an entity's label. For this entity type
+    // we have decided (in the annotation for the Event class in Event.php) that
+    // the 'title' field represents what is generically considered the label.
     // $label = $event->label();
-    // drupal_set_message('The label of the event with the ID ' . $id . ' is ' . $label . '.');
+    // drupal_set_message('The label of the event with ID ' . $id . ' is ' . $label . '.');
 
     // This displays the title of the event loaded above in a message.
     // There are multiple ways to retrieve a field value in Drupal 8:
@@ -128,11 +128,11 @@ class TestController implements ContainerInjectionInterface {
     // method.
     /** @see \Drupal\Core\TypedData\TypedDataInterface::getValue() */
     // $title = $string->getValue();
-    // drupal_set_message('The title of the event with the ID ' . $id . ' is ' . $title . '.');
+    // drupal_set_message('The title of the event with ID ' . $id . ' is ' . $title . '.');
 
     // This displays the date of the event loaded above in a message.
     // $date = $event->get('date')->value;
-    // drupal_set_message('The date of the event with the ID ' . $id . ' is ' . $date . '.');
+    // drupal_set_message('The date of the event with ID ' . $id . ' is ' . $date . '.');
 
     // This displays the description of the event loaded above in a message.
     // Text fields store two property values in the database:
@@ -141,7 +141,7 @@ class TestController implements ContainerInjectionInterface {
     // Additionally, they expose a so-called "computed" property called
     // 'processed' which contains the processed text after application of the
     // text format.
-    // drupal_set_message('The description for event with the ID ' . $id . ' is:');
+    // drupal_set_message('The description for event with ID ' . $id . ' is:');
     // drupal_set_message() hides duplicate messages by default but in this case
     // it even hides messages which are not strictly equal as is proven by the
     // output.
