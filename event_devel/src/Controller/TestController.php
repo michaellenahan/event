@@ -5,7 +5,7 @@ namespace Drupal\event_devel\Controller;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityDefinitionUpdateManagerInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-// Leave an unused use statements, so commented out code below works immediately
+// Leave an unused use statement, so commented out code below works immediately
 // when uncommenting it.
 // @codingStandardsIgnoreStart
 use Drupal\event\Entity\Event;
