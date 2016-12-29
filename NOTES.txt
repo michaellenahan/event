@@ -68,7 +68,9 @@ Branch: `00-empty-module` → `01-minimal-entity-type`
   * `{event}` table created
   * `id` and `uuid` columns
 
-* Try out event CRUD
+* Try out event CRUD, by commenting out the relevant code in the
+evaluateTestCode() function in TestController.php, then visiting the url at
+'/evaluate-test-code'
   * Create and save an event
     * Row in `{event}` table
   * Load an event by ID and print ID and UUID
