@@ -319,7 +319,7 @@ Branch: `04-view-builder` → `05-forms`
 
   ```php
    *     "add-form" = "/admin/content/events/add",
-   *     "edit-form" = "/admin/content/events/manage/{event}",
+   *     "edit-form" = "/admin/content/events/manage/{event}/edit",
    *     "delete-form" = "/admin/content/events/manage/{event}/delete",
   ```
 
@@ -335,7 +335,7 @@ Branch: `04-view-builder` → `05-forms`
 
 * Rebuild caches
 * Visit `/admin/content/events/add`
-* Visit `/admin/content/events/manage/{event}/`
+* Visit `/admin/content/events/manage/{event}/edit`
 * Visit `/admin/content/events/manage/{event}/delete`
 
 ## List builder
